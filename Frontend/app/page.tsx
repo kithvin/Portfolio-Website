@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Geist, Geist_Mono } from "next/font/google";
+import Hero from "@/components/Hero";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -24,7 +25,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} bg-black text-white scroll-smooth`}
       >
         <Navbar />
-        
+        <Hero />
       </body>
     </html>
   );

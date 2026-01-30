@@ -7,8 +7,8 @@ import { Footer } from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
+  weight: ["100","200","300","400","500","600","700","800","900"],
+  style: ["normal","italic"],
   variable: "--font-poppins",
 });
 
@@ -27,13 +27,13 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} bg-black text-white scroll-smooth antialiased flex flex-col min-h-screen`}
       >
-        {/* Navbar */}
         <Navbar />
 
-        {/* Page Content */}
-        <main className="flex-1 pt-24">{children}</main>
+        {/* Hero + all page sections render here */}
+        <main className="flex-1 pt-6">
+          {children}
+        </main>
 
-        {/* Footer */}
         <Footer />
       </body>
     </html>
