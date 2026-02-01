@@ -12,7 +12,7 @@ export function Footer() {
     setYear(new Date().getFullYear());
   }, []);
 
-  const navLinks = ["Home", "About", "Projects", "Articles", "Expertise", "Contact"];
+  const navLinks = ["Home", "About", "Projects", "Articles", "Expertise", "Education" , "Contact"];
 
   return (
     <motion.footer

@@ -10,6 +10,7 @@ const navItems = [
   { name: "Projects", href: "#projects" },
   { name: "Articles", href: "#articles" },
   { name: "Expertise", href: "#expertise" },
+  { name: "Education", href: "#education" },
   { name: "GitHub", href: "#github" },
   { name: "Contact", href: "#contact" },
 ];
@@ -100,7 +101,7 @@ export default function Navbar() {
         </motion.div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex gap-8 text-base font-semibold ">
+        <div className="hidden md:flex gap-8 text-base font-semibold">
           {navItems.map((item) => (
             <a
               key={item.name}

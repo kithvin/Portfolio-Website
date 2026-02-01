@@ -1,21 +1,17 @@
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.css";
-
 import Navbar from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { Geist, Geist_Mono } from "next/font/google";
 
-const poppins = Poppins({
+const geistSans = Geist({
   subsets: ["latin"],
-  weight: ["100","200","300","400","500","600","700","800","900"],
-  style: ["normal","italic"],
-  variable: "--font-poppins",
+  variable: "--font-geist-sans",
 });
 
-export const metadata: Metadata = {
-  title: "Kithvin Portfolio",
-  description: "Personal portfolio of Kithvin Bandara - Software Engineer",
-};
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
+});
 
 export default function RootLayout({
   children,
@@ -25,15 +21,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} bg-black text-white scroll-smooth antialiased flex flex-col min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} relative min-h-screen overflow-x-hidden bg-[#0b0f19] text-white scroll-smooth`}
       >
+        {/* GLOBAL BACKGROUND FOR ENTIRE WEBSITE */}
+        <div className="pointer-events-none fixed inset-0 -z-10">
+          <div className="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-cyan-500/10 blur-3xl" />
+          <div className="absolute -bottom-32 -right-24 h-[32rem] w-[32rem] rounded-full bg-indigo-500/10 blur-3xl" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(56,189,248,0.10),transparent_40%),radial-gradient(circle_at_80%_30%,rgba(139,92,246,0.12),transparent_45%)]" />
+        </div>
+
         <Navbar />
-
-        {/* Hero + all page sections render here */}
-        <main className="flex-1 pt-6">
-          {children}
-        </main>
-
+        <main className="pt-24">{children}</main>
         <Footer />
       </body>
     </html>
