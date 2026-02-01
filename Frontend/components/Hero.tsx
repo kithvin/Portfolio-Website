@@ -8,7 +8,7 @@ import { Download, MessageCircle } from "lucide-react";
 export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden text-white">
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 pt-16 pb-8 sm:pt-20 sm:pb-10 md:pt-26 md:pb-12">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 pt-16 pb-8 sm:pt-20 sm:pb-10 md:pt-26 md:pb-14">
         <div className="grid items-center gap-10 sm:gap-14 md:grid-cols-2">
           {/* LEFT */}
           <motion.div
