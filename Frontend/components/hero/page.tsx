@@ -30,7 +30,7 @@ export default function Hero() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight">
-              Hi, I'm{" "}
+              Hi, I'am{" "} 
               <span className="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">
                 Kithvin Bandara
               </span>
@@ -44,7 +44,7 @@ export default function Hero() {
 
             <div className="mt-8 flex flex-col sm:flex-row flex-wrap items-center md:items-start justify-center md:justify-start gap-3">
               <Link
-                href="/cv.pdf"
+                href="/Kithvin_Bandara_SE_CV.pdf"
                 download
                 className="group inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-black transition hover:bg-cyan-200"
               >
