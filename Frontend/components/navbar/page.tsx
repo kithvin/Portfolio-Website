@@ -172,6 +172,7 @@ const navItems = [
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Articles", href: "#articles" },
+  { name: "Experience", href: "#experience" },
   { name: "Education", href: "#education" },
   { name: "Contact", href: "#contact" },
 ];
@@ -182,7 +183,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // ✅ Improved scroll detection (fixes Projects underline issue)
+      
       const scrollPos = window.scrollY + 120;
 
       for (const item of navItems) {
@@ -264,7 +265,7 @@ export default function Navbar() {
         </motion.div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex gap-8 text-base font-semibold">
+        <div className="hidden ml-12 md:flex gap-8 text-base font-semibold">
           {navItems.map((item) => (
             <a
               key={item.name}

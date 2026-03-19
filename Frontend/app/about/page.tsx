@@ -100,20 +100,6 @@ export default function About(): ReactElement {
             </motion.div>
           ))}
         </div>
-
-        {/* Journey */}
-        <div className="mt-14 sm:mt-16 w-full max-w-[65ch] md:max-w-none text-center md:text-left">
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-cyan-300 mb-4 sm:mb-5">
-            My Journey
-          </h3>
-          <p className="text-[13px] sm:text-sm md:text-base leading-6 sm:leading-7 text-white/70 text-justify">
-            My journey into software engineering began with a curiosity about
-            how real world applications are designed and structured. Through
-            academic and personal projects, I have been able to develop a
-            growing understanding of architecture, design principles, and
-            practical engineering practices used in modern software development.
-          </p>
-        </div>
       </div>
     </section>
   );

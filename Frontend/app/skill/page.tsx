@@ -20,6 +20,7 @@ import {
   SiStripe,
   SiHtml5,
   SiCss3,
+  SiNestjs,
   SiTypescript,
   SiJavascript,
   SiCloudinary,
@@ -55,10 +56,11 @@ const skillBlocks: SkillBlock[] = [
   },
   {
     title: "Backend Technologies",
-    subtitle: "APIs & server-side",
+    subtitle: "APIs & server side",
     items: [
       { name: "Node.js", icon: <SiNodedotjs /> },
       { name: "Express.js", icon: <SiExpress /> },
+      { name: "Nest.js", icon: <SiNestjs /> },
       { name: "Spring Boot", icon: FallbackIcon },
       { name: "REST APIs", icon: FallbackIcon },
       { name: "Inngest", icon: FallbackIcon },

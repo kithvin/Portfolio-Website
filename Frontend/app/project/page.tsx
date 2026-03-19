@@ -314,6 +314,14 @@ import {
   SiAxios,
   SiJsonwebtokens,
   SiChartdotjs,
+  SiNextdotjs,
+  SiNestjs,
+  SiTypescript,
+  SiStreamlit,
+  SiClerk,
+  SiStripe,
+  SiCloudinary,
+  SiZapier
 } from "react-icons/si";
 import { FaBrain } from "react-icons/fa";
 
@@ -354,10 +362,93 @@ const projects: Project[] = [
       { icon: SiMongodb, name: "MongoDB" },
       { icon: SiJsonwebtokens, name: "JWT" },
       { icon: FaBrain, name: "LLM Integration" },
+      
+    ]
+  },
+
+  {
+    title: "HireConnect – Technical Hiring Platform (Ongoing Development)",
+    image: "/HireConnect.png",
+    description:
+      "A technical hiring and interview practice platform for the software industry that combines video conferencing, real time chat, and a live coding workspace in one environment. It includes AI powered code review, an AI chatbot for guidance, and an Interview Preparation Panel with expected questions and practice tools. The platform helps candidates improve coding quality, understand interview workflows, build confidence, and prepare effectively for real technical interviews successfully today.",
+    liveUrl: "https://hireconnect-three.vercel.app/",
+    githubUrl: "https://github.com/kithvin/HireConnect",
+    tags: [
+      "Full Stack (MERN)",
+      "Video Conference",
+      "Live Coding",
+      "Chat",
+      "AI Assistant Chatbot",
+      "AI Powered Code Review",
+    ],
+    tech: [
+      { icon: SiReact, name: "React" },
+      { icon: SiVite, name: "Vite" },
+      { icon: SiJavascript, name: "JavaScript" },
+      { icon: SiTailwindcss, name: "Tailwind CSS" },
+      { icon: SiNodedotjs, name: "Node.js" },
+      { icon: SiExpress, name: "Express.js" },
+      { icon: SiMongodb, name: "MongoDB" },
+      { icon: SiAxios, name: "Axios" },
+      { icon: SiStreamlit, name: "Stream Chat API" },
+      { icon: SiClerk, name: "Clerk Auth" },
+      { icon: FaBrain, name: "LLM Integration" },
     ],
   },
 
-  // (keep your other projects as they are)
+  {
+    title: "AlumniHub - Alumni Relationship Platform (Ongoing Development)",
+    image: "/Alumni.JPG",
+    description:
+      "A centralized alumni management system that integrates event management and alumni tracking into a unified platform. It includes modules for news updates, volunteer opportunities, donations, job boards, reporting, and engagement tracking to support long term alumni relationships. The system also incorporates an AI powered chatbot that delivers real time assistance, answers user queries, and improves overall user experience through intelligent interaction.",
+    liveUrl: "#",
+    githubUrl: "https://github.com/kithvin/AlumniHub",
+    tags: [
+      "Alumni Tracking",
+      "Event Management",
+      "Reports",
+      "Admin + User Views",
+      "Ai Chatbot"
+    ],
+    tech: [
+      { icon: SiNextdotjs, name: "Next.js" },
+      { icon: SiNestjs, name: "NestJS" },
+      { icon: SiTypescript, name: "TypeScript" },
+      { icon: SiAxios, name: "Axios" },
+      { icon: SiJsonwebtokens, name: "JWT" },
+      { icon: SiMongodb, name: "MongoDB" },
+    ],
+  },
+  {
+    title: "StyleCrate - Fashion Apparel Buying Platform",
+    image: "/Stylecrate.png",
+    description:
+      "A feature rich and responsive fashion Fashion Apparel Buying platform built with the MERN stack. StyleCrate provides a smooth shopping experience with product browsing, category filtering, cart management, and secure checkout, while also offering an admin dashboard for managing products, inventory, orders, and customers. The platform is designed for speed, usability, and scalability, making it suitable for boutiques, growing fashion stores, and larger product catalogs.",
+    liveUrl: "https://style-crate.vercel.app/",
+    githubUrl: "https://github.com/kithvin/StyleCrate",
+    tags: [
+      "Fashion Apparel Buying Platform",
+      "Admin Dashboard",
+      "Product Management",
+      "Cart + Checkout",
+      "Responsive Design",
+    ],
+    tech: [
+      { icon: SiReact, name: "React" },
+      { icon: SiVite, name: "Vite" },
+      { icon: SiJavascript, name: "JavaScript" },
+      { icon: SiTailwindcss, name: "Tailwind CSS" },
+      { icon: SiAxios, name: "Axios" },
+      { icon: SiNodedotjs, name: "Node.js" },
+      { icon: SiExpress, name: "Express.js" },
+      { icon: SiMongodb, name: "MongoDB" },
+      { icon: SiJsonwebtokens, name: "JWT" },
+      { icon: SiZapier, name: "Inngest" },
+      { icon: SiClerk, name: "Clerk Auth" },
+      { icon: SiStripe, name: "Stripe" },
+      { icon: SiCloudinary, name: "Cloudinary" },
+    ],
+  }
 ];
 
 export default function Projects() {
@@ -372,14 +463,12 @@ export default function Projects() {
       id="projects"
       className="relative min-h-screen overflow-hidden text-white scroll-mt-24"
     >
-      {/* ✅ Mobile centered / Desktop left */}
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 md:px-10 flex flex-col items-center md:items-start">
         {/* Header Badge */}
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-cyan-200 mx-auto md:mx-0">
           <span className="h-2 w-2 rounded-full bg-cyan-400 shadow-[0_0_14px_rgba(34,211,238,0.9)]" />
           <p className="font-medium text-cyan-300 text-[13px] sm:text-[14px] md:text-[15px]">
-            Portfolio Showcase |{" "}
-            <span className="text-cyan-300">Projects</span>
+            Portfolio Showcase | <span className="text-cyan-300">Projects</span>
           </p>
         </div>
 
@@ -392,13 +481,13 @@ export default function Projects() {
         </h1>
 
         {/* Subtitle */}
-        <p className="mx-auto md:mx-0 mb-14 max-w-2xl text-center md:text-left text-sm text-white/70 sm:text-base">
+        <p className="mx-auto md:mx-0 mb-14 max-w-2xl text-center md:text-left text-sm text-white/70 sm:text-base md:whitespace-nowrap">
           Selected projects that showcase structured development, clean UI, and
           real world problem solving with end to end thinking.
         </p>
 
         {/* Projects Grid */}
-        <div className="grid w-full gap-6 sm:gap-8 md:grid-cols-2">
+        <div className="grid w-full gap-6 sm:gap-12 md:grid-cols-2">
           {visibleProjects.map((project) => (
             <article
               key={project.title}
@@ -408,9 +497,9 @@ export default function Projects() {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  width={1400}
-                  height={900}
-                  className="w-full h-125 object-cover transition duration-700 ease-out group-hover:scale-[1.02] rounded-t-2xl"
+                  width={1600}
+                  height={1200}
+                  className="w-full h-125 object-fill transition duration-700 ease-out group-hover:scale-[1.02] rounded-t-2xl"
                   priority
                 />
 
