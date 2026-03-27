@@ -4,6 +4,7 @@ import Project from "@/app/project/page";
 import Navbar from "@/components/navbar/page";
 import { Footer } from "@/components/footer/page";
 import Skills from "@/app/skill/page";
+import ArticlesSection from "@/app/articlesSection/page";
 
 export default function HomePage() {
   return (
@@ -11,8 +12,9 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <About />
-      <Skills />  
+      <Skills />
       <Project />
+      <ArticlesSection />
       <Footer />
     </>
   );
