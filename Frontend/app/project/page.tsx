@@ -299,7 +299,7 @@ export default function Projects() {
                   {project.description}
                 </p>
 
-                <div className="mt-5 flex flex-wrap gap-x-4 gap-y-3">
+                {/* <div className="mt-5 flex flex-wrap gap-x-4 gap-y-3">
                   {project.tech.map((t, i) => {
                     const Icon = t.icon;
                     return (
@@ -308,6 +308,24 @@ export default function Projects() {
                         className="flex items-center gap-2 text-sm text-white/80"
                       >
                         <Icon className="text-cyan-400" size={18} />
+                        <span>{t.name}</span>
+                      </div>
+                    );
+                  })}
+                </div> */}
+
+                <div className="mt-5 grid grid-cols-2 sm:flex sm:flex-wrap gap-x-4 gap-y-3">
+                  {project.tech.map((t, i) => {
+                    const Icon = t.icon;
+                    return (
+                      <div
+                        key={`${project.id}-${t.name}-${i}`}
+                        className="flex items-center gap-2 text-sm text-white/80"
+                      >
+                        <div className="w-5 flex justify-center">
+                          <Icon className="text-cyan-400" size={18} />
+                        </div>
+
                         <span>{t.name}</span>
                       </div>
                     );
