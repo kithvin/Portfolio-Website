@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar/page";
 import { Footer } from "@/components/footer/page";
 import Skills from "@/app/skill/page";
 import ArticlesSection from "@/app/articlesSection/page";
+import Experience from "./experience/page";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Skills />
       <Project />
       <ArticlesSection />
+      <Experience />
       <Footer />
     </>
   );
