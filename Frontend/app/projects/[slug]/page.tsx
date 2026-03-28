@@ -60,23 +60,25 @@ const projects: Project[] = [
     liveUrl: "https://finsage-phi.vercel.app/",
     githubUrl: "https://github.com/kithvin/Finsage",
     content: `FinSage – AI Powered Wealth Management System
+  
+    FinSage is a full featured AI powered wealth management platform designed to help users clearly understand, organize, and improve their financial health from one centralized system. Built using a modern MERN based architecture, the platform combines income, assets, liabilities, and credit card data into a single intelligent dashboard, giving users a complete real time view of their financial situation. Instead of relying on multiple tools, FinSage structures financial data into clear visual summaries and reports that make it easier to track progress, understand net worth, and make informed financial decisions.
 
-FinSage is a full featured AI powered wealth management platform designed to help users understand and manage their financial life from one centralized system.
+    Unlike traditional budgeting applications, FinSage goes beyond simple expense tracking by transforming raw financial data into meaningful insights. The platform includes AI powered features such as a chatbot assistant and a financial recommendation engine that analyze user data and provide practical, data driven guidance. These intelligent tools help users identify risks, improve money management habits, and take better actions toward long term financial stability while maintaining clarity and usability.
 
-The platform brings together income, assets, liabilities, and credit card data into one structured dashboard. Instead of showing raw numbers only, it transforms financial data into meaningful reports, visual summaries, and guided insights.
+    The system also provides visual analytics, financial health insights, and structured reporting to help users monitor assets, liabilities, income flow, and overall financial performance. FinSage is designed with a responsive and user friendly interface, ensuring smooth access across desktop and mobile devices. With its smart dashboard, AI driven support, and modern MERN based architecture, FinSage offers a more intelligent and streamlined approach to personal wealth management.
 
-One of the key features of FinSage is the AI chatbot and recommendation engine. These components analyze user financial data and provide structured financial guidance, practical suggestions, and actionable insights to support better decision making.
-
-The system is designed to work smoothly across devices, giving users a responsive and user friendly experience. It helps users track progress, understand their financial condition clearly, and make informed financial decisions with long term confidence.
-
-Main Features
-
-1. Centralized financial dashboard
-2. AI chatbot for financial guidance
-3. AI powered recommendation engine
-4. Reports and visual insights
-5. Responsive user experience
-6. JWT based authentication`,
+    Technically, FinSage is built with React.js, Vite, and Tailwind CSS on the frontend, delivering a fast and responsive user experience with clean UI components and financial charts. The backend is powered by Node.js and Express.js, with MongoDB used for structured data storage and JWT based authentication for secure access. AI capabilities are integrated using Google Generative AI to provide intelligent chatbot responses and financial recommendations, and the architecture is designed to be scalable for future cloud based AI enhancements.
+  
+    Main Features
+    
+    1. Centralized financial dashboard  
+    2. AI chatbot for financial guidance  
+    3. AI powered recommendation engine  
+    4. Financial reports and visual insights  
+    5. Responsive user experience  
+    6. JWT based authentication  
+    7. REST API architecture  
+    8. Real time financial analysis`,
     tech: [
       { icon: SiReact, name: "React" },
       { icon: SiVite, name: "Vite" },
@@ -89,7 +91,7 @@ Main Features
       { icon: SiReactrouter, name: "React Router" },
       { icon: SiMongodb, name: "MongoDB" },
       { icon: SiJsonwebtokens, name: "JWT" },
-      { icon: FaBrain, name: "LLM Integration" },
+      { icon: FaBrain, name: "AI / LLM Integration" },
     ],
   },
   {
@@ -102,22 +104,20 @@ Main Features
     githubUrl: "https://github.com/kithvin/HireConnect",
     content: `HireConnect – Technical Hiring Platform
 
-HireConnect is a technical hiring and interview practice platform created for the software industry. It combines multiple important features into one unified environment to support both hiring and preparation workflows.
+    HireConnect is a technical hiring and interview practice platform designed for the software industry, combining multiple interview and preparation tools into one unified environment. The platform brings together video conferencing, real time chat, and a live coding workspace to simulate real technical interview conditions. This integrated approach allows candidates and interviewers to collaborate in a structured setting that closely mirrors actual hiring processes, making the experience more practical and effective. By centralizing communication and coding in a single interface, HireConnect simplifies technical interviews while improving workflow efficiency.
 
-The platform includes video conferencing, real time chat, and a live coding workspace. These features help simulate real technical interview environments and create a practical experience for users.
+    Beyond basic interview simulation, HireConnect also integrates AI powered features to enhance learning and evaluation. The platform includes AI based code review that helps users analyze their solutions, identify improvements, and follow better coding practices. An AI chatbot provides guidance, supports problem solving, and assists candidates during interview preparation. Additionally, the Interview Preparation Panel offers expected questions, structured learning support, and practice tools that help users strengthen technical knowledge and improve readiness for real world interviews.
 
-It also includes AI powered code review and an AI chatbot for guidance. In addition, the Interview Preparation Panel supports candidates with expected questions, learning support, and practice tools to improve readiness for interviews.
+    The platform is built using a modern full stack architecture with React and Vite on the frontend, styled using Tailwind CSS and enhanced with libraries such as Monaco Editor for live coding and Stream Video SDK for real time video interviews. Real time messaging is powered by Stream Chat, while Clerk handles secure authentication and user management. On the backend, HireConnect uses Node.js and Express with MongoDB and Mongoose for scalable data management. AI capabilities are integrated using Google Generative AI, and event driven workflows are supported through Inngest. Together, these technologies enable HireConnect to deliver a fast, interactive, and intelligent environment for technical hiring and interview preparation.
 
-The goal of the platform is to help candidates improve coding quality, understand interview workflows, build confidence, and prepare more effectively for real technical interviews.
+    Main Features
 
-Main Features
-
-1. Video conferencing
-2. Real time chat
-3. Live coding workspace
-4. AI powered code review
-5. AI chatbot guidance
-6. Interview preparation tools`,
+    1. Video conferencing
+    2. Real time chat
+    3. Live coding workspace
+    4. AI powered code review
+    5. AI chatbot guidance
+    6. Interview preparation tools`,
     tech: [
       { icon: SiReact, name: "React" },
       { icon: SiVite, name: "Vite" },
@@ -144,23 +144,24 @@ Main Features
     githubUrl: "https://github.com/kithvin/AlumniHub",
     content: `AlumniHub - Alumni Relationship Platform
 
-AlumniHub is a centralized alumni management system designed to connect institutions and alumni through one unified digital platform.
+    This alumni management system is a centralized platform designed to help institutions manage alumni records, organize events, and maintain stronger long term engagement through one unified system. It combines alumni tracking and event management into a structured environment where institutions can store and manage alumni information efficiently while also planning and handling alumni related activities in a more organized way. By bringing these core functions together, the platform improves administrative workflows and supports better communication between institutions and their alumni communities.
 
-The system combines event management and alumni tracking while also supporting modules for news updates, volunteer opportunities, donations, job boards, reporting, and engagement tracking.
+    The platform provides dedicated admin and user views to support different roles within the system. Administrators can manage alumni profiles, create and organize events, track participation, and generate reports for better decision making. Users can update their information, view upcoming events, and stay connected with the institution. This role based structure helps maintain data accuracy while improving usability and overall system organization.
 
-It is designed to support long term alumni relationships and provide a structured system for communication, activity management, and community engagement.
+    An AI chatbot is also integrated into the platform to provide interactive assistance and improve user experience. The chatbot can help users navigate features, answer common questions, and provide guidance related to events or alumni information. In addition, reporting functionality helps administrators analyze engagement levels, track alumni participation, and monitor overall platform activity. These insights help institutions improve planning and strengthen alumni relationships over time.
+    Technically, the system is being built using Next.js for the frontend with a modern responsive UI, while NestJS powers the backend with a scalable and structured architecture. TypeScript is used across the project to maintain clean and maintainable code, and Axios handles API communication between frontend and backend services. JWT based authentication ensures secure access, and MongoDB is used to manage alumni records, event data, and system information efficiently.
 
-The platform also includes an AI powered chatbot that offers real time assistance, responds to user questions, and improves overall user experience through intelligent interaction.
+    Since the project is currently ongoing, the architecture is designed to be flexible and extendable. New dependencies, features, and AI capabilities can be added as development continues. The platform aims to evolve into a complete alumni engagement solution with enhanced analytics, smarter communication tools, and improved event management capabilities, providing institutions with a modern and intelligent approach to alumni tracking and community building.
 
-Main Features
+    Main Features
 
-1. Alumni tracking
-2. Event management
-3. News updates
-4. Volunteer opportunities
-5. Donations and job board support
-6. Reporting and engagement tracking
-7. AI chatbot support`,
+    1. Alumni tracking
+    2. Event management
+    3. News updates
+    4. Volunteer opportunities
+    5. Donations and job board support
+    6. Reporting and engagement tracking
+    7. AI chatbot support`,
     tech: [
       { icon: SiNextdotjs, name: "Next.js" },
       { icon: SiNestjs, name: "NestJS" },
@@ -181,22 +182,22 @@ Main Features
     githubUrl: "https://github.com/kithvin/Groceezy-new",
     content: `Groceasy - Grocery Shopping Platform
 
-Groceasy is a modern grocery shopping platform built with the MERN stack to simplify online grocery purchasing and store management.
+    Groceasy is a modern grocery shopping platform built using the MERN stack, designed to simplify online grocery purchasing while also providing powerful store management capabilities. The platform allows users to browse grocery products, add items to their cart, and complete purchases through a smooth checkout experience. With a clean and responsive interface, customers can easily explore categories, search for products, and manage their orders. The system focuses on usability and convenience, making everyday grocery shopping faster and more efficient.
 
-Customers can browse products, add items to their cart, and complete secure payments through a smooth and responsive shopping experience.
+    The platform includes a smart cart and checkout system with secure Stripe powered payments, allowing users to place orders safely. Customers can track their selected items, update quantities in real time, and complete transactions without friction. The responsive design ensures the application works smoothly across desktop and mobile devices, providing a consistent experience regardless of screen size. This makes the platform suitable for both quick purchases and full grocery planning.
 
-For sellers and administrators, the platform provides tools for managing products, inventory, and orders through a clean dashboard.
+    Groceasy also provides a dedicated admin dashboard for store management. Administrators can manage product listings, update inventory, upload product images, and monitor customer orders from one centralized panel. Inventory management features allow sellers to add, edit, and delete products while keeping stock levels organized. The order dashboard helps track pending, processed, and completed orders, improving operational efficiency and store control.
 
-The system is designed for reliability, usability, and mobile responsiveness, making it useful for both customers and store owners.
+    Technically, the platform is built with React and Vite on the frontend, styled using Tailwind CSS for a modern responsive UI. React Router handles navigation, and Axios manages API communication. The backend is powered by Node.js and Express.js, with MongoDB used for storing product, order, and user data. JWT authentication ensures secure admin access, while Stripe integration handles payment processing. Cloudinary is used for product image uploads and media storage, completing a full featured and scalable grocery shopping solution.
 
-Main Features
+    Main Features
 
-1. Product browsing
-2. Cart and checkout
-3. Secure payment integration
-4. Inventory management
-5. Admin dashboard
-6. Responsive design`,
+    1. Product browsing
+    2. Cart and checkout
+    3. Secure payment integration
+    4. Inventory management
+    5. Admin dashboard
+    6. Responsive design`,
     tech: [
       { icon: SiReact, name: "React" },
       { icon: SiVite, name: "Vite" },
@@ -222,22 +223,22 @@ Main Features
     githubUrl: "https://github.com/kithvin/StyleCrate",
     content: `StyleCrate - Fashion Apparel Buying Platform
 
-StyleCrate is a responsive fashion apparel buying platform built with the MERN stack and designed to provide a smooth shopping experience for users and administrators.
+    StyleCrate is a feature rich and responsive fashion apparel buying platform built using the MERN stack, designed to provide a smooth and modern online shopping experience. The platform allows users to browse fashion products across organized categories, filter items based on preferences, and view detailed product information before making a purchase. With a clean interface and mobile optimized design, users can easily explore collections, add items to the cart, and complete checkout seamlessly across different devices. The system focuses on usability, performance, and visually appealing product presentation to enhance the overall shopping experience.
 
-Users can browse products, filter categories, manage carts, and complete secure checkout processes.
+    The platform includes a smart cart and secure checkout flow that enables users to manage selected items, update quantities, and place orders efficiently. Category filtering and product search help users quickly find items, while responsive layouts ensure consistent performance on desktop, tablet, and mobile screens. The application is designed to make browsing and purchasing simple, allowing customers to move from product discovery to checkout without friction. This creates a fast and convenient shopping workflow for fashion customers.
 
-The platform also includes an admin dashboard for managing products, inventory, customer activity, and orders efficiently.
+    StyleCrate also provides a dedicated admin dashboard for managing store operations. Administrators can add new products, update inventory, upload product images, and manage customer orders from one centralized interface. Product management features allow full control over listings, categories, and pricing, while order management helps track purchase activity and monitor store performance. This admin panel simplifies store maintenance and supports efficient inventory control.
 
-It is designed for usability, scalability, and performance, making it suitable for boutiques and growing online stores.
+    Technically, the platform is built with React and Vite on the frontend, styled using Tailwind CSS for a modern responsive UI. React Router handles navigation, and Axios manages API communication between frontend and backend services. The backend is powered by Node.js and Express.js, with MongoDB used for storing products, users, and orders. JWT authentication ensures secure admin access, Stripe integration enables secure payment processing, and Cloudinary is used for product image uploads and media storage, creating a scalable and complete fashion e commerce solution.
 
-Main Features
+    Main Features
 
-1. Product browsing
-2. Category filtering
-3. Cart management
-4. Secure checkout
-5. Product and inventory management
-6. Admin dashboard`,
+    1. Product browsing
+    2. Category filtering
+    3. Cart management
+    4. Secure checkout
+    5. Product and inventory management
+    6. Admin dashboard`,
     tech: [
       { icon: SiReact, name: "React" },
       { icon: SiVite, name: "Vite" },
@@ -263,22 +264,22 @@ Main Features
     githubUrl: "https://github.com/kithvin/QuickBlog.git",
     content: `QuickBlog - AI Powered Blogging Platform
 
-QuickBlog is an AI powered blogging platform built with the MERN stack to support both content writers and readers through a smarter blogging experience.
+    QuickBlog is a smart AI powered blogging platform built using the MERN stack, designed to help users create, manage, and publish content more efficiently. The platform combines traditional blogging features with AI assisted content generation, allowing writers to draft posts faster and improve content quality. Users can create, edit, and publish articles using a rich text editor with formatting support, while category organization and search functionality make it easier to manage and discover content. The responsive design ensures a smooth reading and writing experience across desktop and mobile devices.
 
-The platform helps writers generate and improve content using AI suggestions, draft support, and structured writing assistance.
+    The platform includes an admin dashboard with analytics to track post performance, user engagement, and overall activity. Content creators can monitor views, comments, and interaction levels, while administrators can manage posts and control publishing. A built in comments system allows readers to interact with articles, creating a more engaging blogging experience. Search and filter features help users quickly find posts by title, category, or keywords, improving accessibility and content discovery.
 
-Readers benefit from smooth navigation, recommendations, and interactive comments, while administrators can manage posts, users, and comments through dashboard tools.
+    QuickBlog also integrates AI powered writing assistance using OpenAI, helping users generate ideas, draft content, and improve structure during the writing process. This AI support makes blogging faster while maintaining flexibility for manual editing. The platform is designed to support the full blogging workflow, from content creation to publishing and audience interaction, making it suitable for personal blogs, technical articles, and content driven platforms.
 
-The project focuses on usability, responsiveness, and a complete writing to publishing workflow.
+    Technically, QuickBlog is built with React and Vite on the frontend, styled using Tailwind CSS for a modern responsive interface. React Router handles navigation, and Axios manages API communication. The backend is powered by Node.js and Express.js, with MongoDB used for storing posts, users, and comments. JWT authentication ensures secure access, OpenAI integration provides AI content generation, and Cloudinary is used for image uploads and media storage, creating a complete AI driven blogging platform.
 
-Main Features
+    Main Features
 
-1. AI writing support
-2. Draft generation
-3. Personalized recommendations
-4. Comments system
-5. Admin dashboard
-6. Analytics and content management`,
+    1. AI writing support
+    2. Draft generation
+    3. Personalized recommendations
+    4. Comments system
+    5. Admin dashboard
+    6. Analytics and content management`,
     tech: [
       { icon: SiReact, name: "React" },
       { icon: SiVite, name: "Vite" },
@@ -396,7 +397,7 @@ export default async function ProjectDetailsPage({
               alt={project.title}
               fill
               priority
-              className="object-cover"
+              className="object-fit"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
           </div>

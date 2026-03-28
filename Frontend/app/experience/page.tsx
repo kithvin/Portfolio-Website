@@ -76,7 +76,7 @@ export default function Experience() {
           </span>
         </h1>
 
-        <p className="mb-12 text-center text-white/70 md:text-left max-w-3xl">
+        <p className="mb-8 w-full max-w-[62ch] text-center text-[13px] leading-6 text-white/70 sm:mb-14 sm:text-sm sm:leading-7 md:max-w-none md:text-base md:text-left">
           Practical experience gained through real client work, collaborative
           development, and modern engineering workflows.
         </p>
