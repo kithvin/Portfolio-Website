@@ -361,7 +361,9 @@ export default async function ProjectDetailsPage({
     notFound();
   }
 
-  const { title: contentTitle, sections } = parseProjectContent(project.content);
+  const { title: contentTitle, sections } = parseProjectContent(
+    project.content
+  );
 
   return (
     <>
@@ -388,7 +390,7 @@ export default async function ProjectDetailsPage({
             </span>
           </h1>
 
-          <div className="relative mb-8 aspect-[16/9] w-full overflow-hidden rounded-[28px] border border-white/10 sm:h-[320px] lg:h-[720px]">
+          <div className="relative mb-8 aspect-[16/10] w-full overflow-hidden rounded-[28px] border border-white/10 sm:h-[320px] lg:h-[720px]">
             <Image
               src={project.image}
               alt={project.title}
@@ -397,28 +399,6 @@ export default async function ProjectDetailsPage({
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
-          </div>
-
-          <div className="mb-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-cyan-400 bg-cyan-400/10 px-6 py-3 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-black"
-            >
-              <FiExternalLink size={18} />
-              Live Demo
-            </a>
-
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
-            >
-              <FaGithub size={18} />
-              GitHub
-            </a>
           </div>
 
           <div className="w-full rounded-[28px] border border-white/10 bg-white/[0.04] p-5 backdrop-blur-md sm:p-8 lg:p-10">
@@ -440,7 +420,9 @@ export default async function ProjectDetailsPage({
                 }
 
                 if (section.type === "subheading") {
-                  if (section.content.toLowerCase().includes("technologies used")) {
+                  if (
+                    section.content.toLowerCase().includes("technologies used")
+                  ) {
                     return null;
                   }
 
@@ -524,6 +506,27 @@ export default async function ProjectDetailsPage({
                     </div>
                   );
                 })}
+              </div>
+              <div className="mb-4 flex flex-col justify-center gap-3 sm:flex-row">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-cyan-400 bg-cyan-400/10 px-6 py-3 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-black"
+                >
+                  <FiExternalLink size={18} />
+                  Live Demo
+                </a>
+
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
+                >
+                  <FaGithub size={18} />
+                  GitHub
+                </a>
               </div>
             </div>
           </div>

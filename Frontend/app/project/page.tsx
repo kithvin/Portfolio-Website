@@ -398,6 +398,9 @@ import {
   SiZapier,
   SiReactrouter,
   SiOpenai,
+  SiGithub,
+  SiVercel,
+  SiReadthedocs,
 } from "react-icons/si";
 import { FaBrain } from "react-icons/fa";
 
@@ -739,7 +742,7 @@ export default function Projects() {
           </span>
         </h1>
 
-        <p className="mx-auto mb-14 max-w-2xl text-center text-sm text-white/70 sm:text-base md:mx-0 md:text-left">
+        <p className="mb-8 w-full max-w-[62ch] text-center text-[13px] leading-6 text-white/70 sm:mb-14 sm:text-sm sm:leading-7 md:max-w-none md:text-base md:text-left">
           Selected projects that showcase structured development, clean UI, and
           real world problem solving with end to end thinking.
         </p>
@@ -789,7 +792,7 @@ export default function Projects() {
                   ))}
                 </div>
 
-                <p className="mt-4 text-justify text-sm leading-7 text-white/70">
+                <p className="font-semibold mt-4 text-justify text-sm leading-7 text-white/70">
                   {project.description}
                 </p>
 
@@ -810,7 +813,7 @@ export default function Projects() {
                   })}
                 </div>
 
-                <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                {/* <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                   <Link
                     href={`/projects/${project.slug}`}
                     className="inline-flex items-center justify-center rounded-full border border-cyan-400/30 bg-cyan-400/10 px-5 py-3 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-black"
@@ -833,6 +836,36 @@ export default function Projects() {
                     rel="noreferrer"
                     className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
                   >
+                    GitHub
+                  </a>
+                </div> */}
+
+                <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center">
+                  <Link
+                    href={`/projects/${project.slug}`}
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-5 py-3 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-black"
+                  >
+                    <SiReadthedocs className="text-base" />
+                    View Project
+                  </Link>
+
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-cyan-400 bg-cyan-400/10 px-5 py-3 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-black"
+                  >
+                    <SiVercel className="text-base" />
+                    Live Demo
+                  </a>
+
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white hover:text-black"
+                  >
+                    <SiGithub className="text-base" />
                     GitHub
                   </a>
                 </div>
